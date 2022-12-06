@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+*{  
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.title {
+    font-size: 50px;
+    padding: 40px;
+    text-align: center;
+    color: #111;
+}
+.nav{
+    border-top:  1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+.nav ul {
+    margin: 0 auto;
+    /* 중앙정렬 */
+    width: 1000px;
+}
+
+.nav ul li {
+    display: inline-block;
+    /* height: 100px; li의 높이조절 별로 효과 좋지않음 */
+}
+.nav ul li a {
+    height: 80px; 
+    display: inline-block;
+    /* 높이 안늘어남 인라인요소라서 블록으로 지정 */
+    line-height: 80px;
+    /* 블록으로 지정 후 높이만큼 하이트 조절로 중앙정렬 */
+    padding: 0 20px;
+    /* 위아래 양옆 */
+    /* 패딩으로 높이조절 안하는 이유? 텍스트 뿐만 아니라 패딩영역도 하이퍼링크 인식 */
+}
